@@ -12,15 +12,15 @@ import (
 )
 
 type TStatZoneConfig struct {
-	CurrentTemp     uint8  `json:"currentTemp"`
+	CurrentTemp     int8  `json:"currentTemp"`
 	CurrentHumidity uint8  `json:"currentHumidity"`
-	OutdoorTemp     uint8  `json:"outdoorTemp"`
+	OutdoorTemp     int8  `json:"outdoorTemp"`
 	Mode            string `json:"mode"`
 	Stage           uint8  `json:"stage"`
 	FanMode         string `json:"fanMode"`
 	Hold            *bool  `json:"hold"`
-	HeatSetpoint    uint8  `json:"heatSetpoint"`
-	CoolSetpoint    uint8  `json:"coolSetpoint"`
+	HeatSetpoint    int8  `json:"heatSetpoint"`
+	CoolSetpoint    int8  `json:"coolSetpoint"`
 	RawMode         uint8  `json:"rawMode"`
 }
 
