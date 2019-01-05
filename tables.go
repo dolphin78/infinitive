@@ -6,7 +6,7 @@ type InfinityTable interface {
 }
 
 type TStatCurrentParams struct {
-	Z1CurrentTemp     uint8
+	Z1CurrentTemp      int8
 	Z2CurrentTemp     uint8
 	Z3CurrentTemp     uint8
 	Z4CurrentTemp     uint8
@@ -23,7 +23,7 @@ type TStatCurrentParams struct {
 	Z7CurrentHumidity uint8
 	Z8CurrentHumidity uint8
 	Unknown1          uint8
-	OutdoorAirTemp    uint8
+	OutdoorAirTemp     int8
 	ZoneUnocc         uint8 // bitflags
 	Mode              uint8
 	Unknown2          [5]uint8
@@ -44,7 +44,7 @@ type TStatZoneParams struct {
 	Z7FanMode        uint8
 	Z8FanMode        uint8
 	ZoneHold         uint8 // bitflags
-	Z1HeatSetpoint   uint8
+	Z1HeatSetpoint    int8
 	Z2HeatSetpoint   uint8
 	Z3HeatSetpoint   uint8
 	Z4HeatSetpoint   uint8
@@ -52,7 +52,7 @@ type TStatZoneParams struct {
 	Z6HeatSetpoint   uint8
 	Z7HeatSetpoint   uint8
 	Z8HeatSetpoint   uint8
-	Z1CoolSetpoint   uint8
+	Z1CoolSetpoint    int8
 	Z2CoolSetpoint   uint8
 	Z3CoolSetpoint   uint8
 	Z4CoolSetpoint   uint8
